@@ -45,6 +45,7 @@ function Download() {
                 <div className="details">
                   <p className="name">{item.name}</p>
                   <span className="version"> v{item.version}</span>
+                  {item.latest && <small className="latest">latest</small>}
                 </div>
               </a>
             </li>
