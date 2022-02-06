@@ -1,0 +1,149 @@
+.home-spotlight {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  .home-spotlight-content {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .spotlight-left {
+      .spotlight-heading {
+        font-size: 2rem;
+        font-weight: normal;
+        max-width: 330px;
+        color: $text-hover;
+        span.spotlight-highlight {
+          color: $highlight;
+          font-weight: bold;
+        }
+      }
+      .details {
+        padding: 10px 0;
+        max-width: 500px;
+      }
+    }
+    .spotlight-right {
+      .image-container {
+        img.homebg {
+          width: 90%;
+        }
+      }
+    }
+  }
+  .links {
+    .link-icon {
+      color: $highlight;
+    }
+    a {
+      padding: 8px 0px;
+      display: block;
+      text-decoration: none;
+      color: $highlight;
+      &:hover {
+        color: $text-hover;
+      }
+    }
+  }
+
+  // about section
+  .about-section {
+    margin: 12% 0;
+  }
+  // Download section
+  .download-section {
+    margin-top: 12%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .more-btn {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    text-align: center;
+    .nav-btn {
+      text-decoration: none;
+      color: $highlight;
+      padding: 10px 20px;
+      border: 1px solid $text;
+      border-radius: 10px;
+      &:hover {
+        color: black;
+        background-color: $highlight;
+      }
+    }
+  }
+}
+@media screen and (max-width: 968px) {
+  .home-spotlight {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 50px;
+    .home-spotlight-content {
+      margin-top: 13%;
+      gap: 30px;
+      .spotlight-left {
+        .spotlight-heading {
+          max-width: 500px;
+          span.spotlight-highlight {
+          }
+        }
+        .details {
+        }
+      }
+      .spotlight-right {
+        .image-container {
+          img.homebg {
+          }
+        }
+      }
+    }
+    .links {
+      margin-top: 20px;
+      .link-icon {
+      }
+      a {
+        &:hover {
+        }
+      }
+    }
+    // about section
+    .about-section {
+      margin: 15% 0;
+    }
+  }
+}
+@media screen and (max-width: 528px) {
+  .home-spotlight {
+    .home-spotlight-content {
+      margin-top: 19%;
+      .spotlight-left {
+        .spotlight-heading {
+          max-width: 100%;
+          span.spotlight-highlight {
+          }
+        }
+        .details {
+        }
+      }
+      .spotlight-right {
+        .image-container {
+          img.homebg {
+          }
+        }
+      }
+    }
+    .links {
+      .link-icon {
+      }
+      a {
+        &:hover {
+        }
+      }
+    }
+    // about section
+    .about-section {
+      margin: 20% 0;
+    }
+  }
+}

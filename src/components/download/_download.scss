@@ -1,0 +1,41 @@
+.download {
+  margin-top: 50px;
+  .head {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .download-items {
+    margin-top: 50px;
+    .datas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      li.data {
+        list-style: none;
+        a.item {
+          text-decoration: none;
+          color: $highlight;
+          display: flex;
+          &:hover {
+            color: $text;
+          }
+          .download-icon {
+            font-size: 1.3rem;
+            margin: 5px;
+          }
+          .details {
+            text-align: end;
+
+            .name {
+              font-size: 1.3rem;
+            }
+            .version {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

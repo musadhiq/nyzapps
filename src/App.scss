@@ -1,0 +1,23 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import "./scss/colors";
+body {
+  font-family: sans-serif;
+  color: $text;
+  background-color: $background;
+}
+
+@import "./components/Header/header";
+@import "./pages/Home/home";
+@import "./pages/about/about";
+@import "./components/Box/box";
+@import "./pages/Download/download";
+span.highlight {
+  color: $highlight;
+}
+span.highlight-white {
+  color: $text-hover;
+}

@@ -1,0 +1,20 @@
+.box {
+  width: 100%;
+  margin: 0 auto;
+  height: 40vh;
+  border: 2px solid $text;
+  background-color: rgba(255, 255, 255, 0.219);
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  .link {
+    font-size: 1.3rem;
+    .box-link {
+      text-decoration: $highlight;
+    }
+    .box-current {
+    }
+  }
+}
