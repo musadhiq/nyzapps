@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import data from "../../assets/latest.json";
 function About() {
   return (
     <div className="about">
@@ -21,9 +22,9 @@ function About() {
         </p>
       </div>
       <div className="explore-connect">
-        <Link to="/" className="button">
+        <a href={data.community} className="button">
           Join our Community
-        </Link>
+        </a>
         <Link to="/privacy-policy" className="button">
           Privacy Policy
         </Link>

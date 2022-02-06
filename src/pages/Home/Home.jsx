@@ -6,7 +6,7 @@ import homebg from "../../assets/homebg.png";
 import About from "../../components/about/About";
 import Download from "../../components/download/Download";
 import { BsArrowRightShort } from "react-icons/bs";
-
+import data from "../../assets/latest.json";
 function Home() {
   return (
     <div className="home-spotlight">
@@ -29,12 +29,12 @@ function Home() {
         </div>
       </div>
       <div className="links">
-        <Link to="/">
+        <a href={data.latestwa}>
           <FaDownload className="link-icon" /> Download Latest Version Here !
-        </Link>
-        <Link to="/">
+        </a>
+        <a href={data.contactDev}>
           <MdConnectWithoutContact className="link-icon" /> Contact Developer !
-        </Link>
+        </a>
       </div>
       {/* about section */}
       <div className="about-section">

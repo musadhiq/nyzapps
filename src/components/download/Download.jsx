@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MdDownload } from "react-icons/md";
 import wAdata from "../../assets/wa.json";
 import instadata from "../../assets/insta.json";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 function Download() {
   const [active, setActive] = useState(true);
@@ -41,11 +42,18 @@ function Download() {
           {data.map((item, index) => (
             <li className="data" key={index}>
               <a href={item.url} className="item">
-                <MdDownload className="download-icon" />
+                {active ? (
+                  <FaWhatsapp className="download-icon" />
+                ) : (
+                  <FaInstagram className="download-icon" />
+                )}
                 <div className="details">
                   <p className="name">{item.name}</p>
                   <span className="version"> v{item.version}</span>
                   {item.latest && <small className="latest">latest</small>}
+                </div>
+                <div>
+                  <MdDownload className="download-icon" />
                 </div>
               </a>
             </li>

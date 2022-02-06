@@ -51,14 +51,22 @@
     margin-top: 50px;
     .datas {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
       justify-items: center;
+      @media screen and (max-width: 550px) {
+        grid-template-columns: 1fr;
+      }
       li.data {
+        width: 250px;
         list-style: none;
         border: 1px solid $text-hover;
         padding: 10px 20px;
         border-radius: 10px;
+        @media screen and (max-width: 550px) {
+          width: 90%;
+          margin: 0 auto;
+        }
         &:hover {
           background-color: $highlight;
         }
@@ -66,21 +74,23 @@
           text-decoration: none;
           color: $highlight;
           display: flex;
+          justify-content: space-around;
+          align-items: center;
           &:hover {
             color: $header-color;
           }
           .download-icon {
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             margin: 5px;
           }
           .details {
             text-align: justify;
 
             .name {
-              font-size: 1.3rem;
+              font-size: 1rem;
             }
             .version {
-              font-size: 0.8rem;
+              font-size: 0.7rem;
             }
             .latest {
               background-color: $text;
@@ -88,7 +98,8 @@
               padding: 5px 10px;
               color: red;
               border-radius: 10px 0 10px 0;
-              margin: 10px;
+              margin: 2px;
+              display: inline-block;
             }
           }
         }
